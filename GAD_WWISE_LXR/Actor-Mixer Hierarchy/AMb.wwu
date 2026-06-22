@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4FA1B075-AAF1-4A57-AC93-F76357A81BAE}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="AMb" ID="{4FA1B075-AAF1-4A57-AC93-F76357A81BAE}" PersistMode="Standalone">
+			<ChildrenList>
+				<BlendContainer Name="amb" ID="{11F20A95-43C4-436C-BCC4-B476098D8E90}" ShortID="87173974">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{DD8736A1-1E34-4C2C-BC7C-EF3C5D6753B5}" ShortID="737581451">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="5000"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{1B63106A-94EE-4E51-BAF4-C42D082C926A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>InvertedSCurve</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>1362.098</XPos>
+															<YPos>-9.17696</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="LowPassFilter" ID="{1EA6AC9D-B0F8-48D5-9DEA-AAF652B84B4D}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>27</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="HighPassFilter" ID="{1A2D09E8-7DB5-4A22-A7B5-B4425939228A}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="65537"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>22</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Spread" ID="{AB4759AC-AC61-424C-AAFE-D6F43984AEF7}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>29.92424</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="Focus" ID="{5C8EE45F-D619-4DF2-9C84-73A34E8E67CF}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="1"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>22.72727</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Log2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>5000</XPos>
+															<YPos>0</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</FocusUsage>
+										<ObstructionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionVolumeUsage>
+										<ObstructionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionLPFUsage>
+										<ObstructionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</ObstructionHPFUsage>
+										<OcclusionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionVolumeUsage>
+										<OcclusionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionLPFUsage>
+										<OcclusionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</OcclusionHPFUsage>
+										<DiffractionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionVolumeUsage>
+										<DiffractionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionLPFUsage>
+										<DiffractionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</DiffractionHPFUsage>
+										<TransmissionVolumeUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionVolumeUsage>
+										<TransmissionLPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionLPFUsage>
+										<TransmissionHPFUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+										</TransmissionHPFUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="amb-bird" ID="{871484B4-8492-4A2D-A045-182A1C6A6256}" ShortID="592620323">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="7">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9DE50C9B-B630-49EF-AB77-71A3B645871D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_Forest_3D_Bird_Owl_Hoot_01" ID="{18C3B5A8-88E7-453A-BE6E-ABC5FDAB9D8B}" ShortID="141695159">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Bird_Owl_Hoot_01" ID="{2A085222-EB0F-4E87-B96D-3A6432B40907}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Bird_Owl_Hoot_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="454015402"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Bird_Owl_Hoot_01" ID="{2A085222-EB0F-4E87-B96D-3A6432B40907}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Bird_Owl_Hoot_02" ID="{F67D20AD-F061-44CE-8B87-D8CA132FA056}" ShortID="271788345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Bird_Owl_Hoot_02" ID="{1ACD87F0-2D61-4594-B4D6-26C5ACE1E41D}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Bird_Owl_Hoot_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="53102301"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Bird_Owl_Hoot_02" ID="{1ACD87F0-2D61-4594-B4D6-26C5ACE1E41D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Bird_Owl_Hoot_03" ID="{31642136-96F7-4805-90EC-4F6CACC90626}" ShortID="931479819">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Bird_Owl_Hoot_03" ID="{7962D45D-A634-4807-A410-7F32422A9D6A}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Bird_Owl_Hoot_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="675463402"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Bird_Owl_Hoot_03" ID="{7962D45D-A634-4807-A410-7F32422A9D6A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Bird_Owl_Hoot_04" ID="{71BDC71E-C9DD-4A97-A9E9-4779132626C0}" ShortID="989476052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Bird_Owl_Hoot_04" ID="{5905949A-7535-4E2C-9C51-F2B5D1E90B3E}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Bird_Owl_Hoot_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1028911722"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Bird_Owl_Hoot_04" ID="{5905949A-7535-4E2C-9C51-F2B5D1E90B3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Bird_Owl_Hoot_05" ID="{FCF52509-CED8-450F-8294-F849DAD723DA}" ShortID="905353656">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Bird_Owl_Hoot_05" ID="{F7CA56D4-6F86-46A0-98D9-E9D3F3E3C33F}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Bird_Owl_Hoot_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="265705057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Bird_Owl_Hoot_05" ID="{F7CA56D4-6F86-46A0-98D9-E9D3F3E3C33F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb-insect" ID="{2D18193F-2ECE-46DC-8A34-F71AEC086F5D}" ShortID="777267663">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C42F0527-08DB-4C81-96A9-FDF4C5B28DDE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_01" ID="{D20E83F1-898B-4284-97F8-3CA7CCE4D0BD}" ShortID="1069471885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_01" ID="{BBA25A72-3F89-4287-BE6D-22E8ED7AC51C}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="738604218"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_01" ID="{BBA25A72-3F89-4287-BE6D-22E8ED7AC51C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_02" ID="{48AAB8DF-A1DA-4731-80D0-55A11D3830C9}" ShortID="1019262997">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_02" ID="{63A7567B-EF40-407F-A544-ADF7C623ABC5}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="23473295"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_02" ID="{63A7567B-EF40-407F-A544-ADF7C623ABC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_03" ID="{4585DBB3-2B4D-4DDE-992D-0E9F1ADB77DB}" ShortID="7742564">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_03" ID="{F2EAE883-6E41-4DB3-952D-70799BD2C8D9}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="165610817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_03" ID="{F2EAE883-6E41-4DB3-952D-70799BD2C8D9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_04" ID="{13081A41-5E54-4DD3-BDBA-D657BDADCAA8}" ShortID="369961421">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_04" ID="{E3A80747-0F03-4870-AC5D-5FD5B8287BC4}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="884664566"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_04" ID="{E3A80747-0F03-4870-AC5D-5FD5B8287BC4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_05" ID="{6E3FBAD2-48CE-483C-8EB8-9BBA8BA169B5}" ShortID="738820327">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_05" ID="{31E730D3-2767-4EFD-B9FB-CC812D6BAFCB}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="87716513"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_05" ID="{31E730D3-2767-4EFD-B9FB-CC812D6BAFCB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_06" ID="{8D22750D-AC79-4D30-83D5-FCD006C8FE27}" ShortID="360691685">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_06" ID="{0283F02E-BC66-4BB9-9834-64D3AD062242}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="867497479"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_06" ID="{0283F02E-BC66-4BB9-9834-64D3AD062242}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_Forest_3D_Insect_Cricket_07" ID="{F137DD0A-6CD9-4640-BEDA-DF3DA9D795DB}" ShortID="1010589204">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Forest_3D_Insect_Cricket_07" ID="{B9E7956E-91EC-4BA4-B87C-8F1BEC0B977A}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Forest_3D_Insect_Cricket_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="13810500"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Forest_3D_Insect_Cricket_07" ID="{B9E7956E-91EC-4BA4-B87C-8F1BEC0B977A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="AMB_2D_EXT_GEN" ID="{72635B72-0667-4544-8A2C-6C113F098D80}" ShortID="637171857">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{18553D00-D7BE-46BA-B2DB-30B150646ECD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{84006BAD-7D02-4D72-9FF8-4DFD2EEA8FDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMB_2D_EXT_GEN" ID="{68980BFC-3537-410E-BFA6-6DC39A1E1A6F}">
+									<Language>SFX</Language>
+									<AudioFile>AMB_2D_EXT_GEN.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="860596477"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_2D_EXT_GEN" ID="{68980BFC-3537-410E-BFA6-6DC39A1E1A6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

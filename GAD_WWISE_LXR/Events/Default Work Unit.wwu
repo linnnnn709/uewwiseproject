@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{483071D4-D9A1-44DA-8489-07024484EF23}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{483071D4-D9A1-44DA-8489-07024484EF23}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AMB_Forest_3D_Bird_Owl_Hoot_02" ID="{17875ECE-2D33-4A1A-9F7B-75246F2EDACC}">
+					<ChildrenList>
+						<Action Name="" ID="{0D8E4B60-0B81-4A25-8DA2-B9C400310732}" ShortID="986449904">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_3D_Bird_Owl_Hoot_02" ID="{F67D20AD-F061-44CE-8B87-D8CA132FA056}" WorkUnitID="{4FA1B075-AAF1-4A57-AC93-F76357A81BAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_obj_campfire_burn" ID="{92F704CF-C229-42A7-AE21-9A84F804713C}">
+					<ChildrenList>
+						<Action Name="" ID="{A06F9124-A912-4570-A793-CEAAC0C5D114}" ShortID="668854750">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="obj-campfire-burn" ID="{9E26E006-8EE9-48DE-87F7-C83FE8A55B1C}" WorkUnitID="{2B95C96C-C6E7-457B-83E9-215DBC8E79A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_amb" ID="{25A31904-1E70-4A61-8962-876D234F6FEB}">
+					<ChildrenList>
+						<Action Name="" ID="{945D88E2-7ADE-43A1-B35C-5815B4A73265}" ShortID="351585939">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb" ID="{11F20A95-43C4-436C-BCC4-B476098D8E90}" WorkUnitID="{4FA1B075-AAF1-4A57-AC93-F76357A81BAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_fs_run" ID="{0E6129EC-3BB8-430A-8D99-62CC5E17090C}">
+					<ChildrenList>
+						<Action Name="" ID="{9524B3E0-41D0-46B2-B58D-80AFA4C33D1A}" ShortID="213461374">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fs-run" ID="{7F8D3EEA-CA72-4953-A120-881E7ABF3016}" WorkUnitID="{59B907EF-B944-4E4C-9C0E-D0217418250A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VO_Female_WwiseSpatialAudio_P1" ID="{AFAAB1F9-517B-4E3C-BA06-35DBFDBC8560}">
+					<ChildrenList>
+						<Action Name="" ID="{66D2A7F6-3F80-43EC-9E60-80E4A8185255}" ShortID="737468523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Female_WwiseSpatialAudio_P1" ID="{E0A73EED-5EEB-4038-80D0-FA3F8BA61A6E}" WorkUnitID="{2B95C96C-C6E7-457B-83E9-215DBC8E79A4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

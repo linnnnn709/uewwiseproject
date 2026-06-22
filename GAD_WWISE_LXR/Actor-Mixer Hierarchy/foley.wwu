@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7D8C9A3D-CD1B-4C7F-B55C-72264DA732F7}" SchemaVersion="123" RootDocumentID="{8B0DFCA8-D750-41DA-9C83-05D6D0D7184D}" ParentDocumentID="{8B0DFCA8-D750-41DA-9C83-05D6D0D7184D}">
+	<AudioObjects>
+		<WorkUnit Name="foley" ID="{7D8C9A3D-CD1B-4C7F-B55C-72264DA732F7}" OwnerID="{8B0DFCA8-D750-41DA-9C83-05D6D0D7184D}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="cloth" ID="{5CE0BDA5-2596-406E-AB69-A6777D71DB89}" PersistMode="Reference"/>
+				<WorkUnit Name="fs" ID="{59B907EF-B944-4E4C-9C0E-D0217418250A}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

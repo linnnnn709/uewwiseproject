@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B0DFCA8-D750-41DA-9C83-05D6D0D7184D}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="player" ID="{8B0DFCA8-D750-41DA-9C83-05D6D0D7184D}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="foley" ID="{7D8C9A3D-CD1B-4C7F-B55C-72264DA732F7}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
